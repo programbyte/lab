@@ -8,7 +8,7 @@ public class Janela extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(600, 400);
 		add(new JLabel("Teste de swing"));
-		add(new JButton("Botão Teste");
+		add(new JButton("Botão Teste2");
 		setLocationRelativeTo(null);
 		setVisible(true);
 	}

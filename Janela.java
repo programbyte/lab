@@ -1,6 +1,7 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JButton;
+
 public class Janela extends JFrame {
 	public Janela() {
 		super("Exemplo de janela");

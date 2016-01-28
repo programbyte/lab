@@ -16,15 +16,17 @@ public class MatrizTransposta {
 		System.out.println("Matriz:");
 		mostrarMatriz(matriz);
 
-		for (int i = 2; i > -1; i--) {
+		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
+				System.out.println("-------");
 				numeroTemp = matriz[i][j];
 				matriz[i][j] = matriz[j][i];
 				matriz[j][i] = numeroTemp;
+				mostrarMatriz(matriz);
 			}
 		}
 
-		System.out.println("Matriz transposta:");
+		System.out.println("Transposta:");
 		mostrarMatriz(matriz);
 	}
 	public static void mostrarMatriz(int[][] matriz) {

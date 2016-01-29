@@ -1,6 +1,7 @@
 public class MatrizTransposta {
 	public static void main(String[] args) {
 		int[][] matriz = new int[3][3];
+		int[][] controleTroca = new int[3][3];
 		int numeroTemp;
 		
 		matriz[0][0] = 1;
@@ -18,11 +19,12 @@ public class MatrizTransposta {
 
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
-				System.out.println("-------");
-				numeroTemp = matriz[i][j];
-				matriz[i][j] = matriz[j][i];
-				matriz[j][i] = numeroTemp;
-				mostrarMatriz(matriz);
+				if (controleTroca[i][j] == 0 && controleTroca[j][i] == 0) {
+					numeroTemp = matriz[i][j];
+					matriz[i][j] = matriz[j][i];
+					matriz[j][i] = numeroTemp;
+					controleTroca[i][j] = 1;
+				}
 			}
 		}
 

@@ -82,7 +82,7 @@ public class Matriz extends JFrame implements ActionListener {
 	}
 	public JPanel getPanelMatriz() {
 		JPanel panel = new JPanel();
-		int ordem = Integer.parseInt(JOptionPane.showInputDialog(this, "Nùmero de ordem:", "Matriz Quadrada", JOptionPane.PLAIN_MESSAGE));
+		int ordem = Integer.parseInt(JOptionPane.showInputDialog(this, "Número de ordem:", "Matriz Quadrada", JOptionPane.PLAIN_MESSAGE));
 		this.ordem = ordem;
 		GridLayout layout = new GridLayout(ordem, ordem);
 		panel.setLayout(layout);
